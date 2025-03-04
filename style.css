@@ -227,11 +227,21 @@ a:not(.file-info):not(.download-link):not(.sidebar-nav-item > a):hover {
 }
   
 /*------------------------------------- En pantallas más pequeñas------------------------------------- */
+#brand::after {
+    content: "Documentación-Lenox";
+  }
+
 @media (max-width: 768px) {
     .content-container {
       padding: 0 15px;
     }
+    #brand::after {
+        content: "Doc-Lenox";
+      }
+    
+
 }
+
 
 /*------------------------------------- Estilos para el texto de contenido------------------------------------- */
 .content-text {
