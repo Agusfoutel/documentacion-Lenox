@@ -238,10 +238,27 @@ a:not(.file-info):not(.download-link):not(.sidebar-nav-item > a):hover {
     #brand::after {
         content: "Doc-Lenox";
       }
-    
-
+    #mobile-menu {
+        overflow-y: auto;
+        max-height: calc(100vh - 60px);
+        padding-bottom: 30px;
+    }
 }
 
+.right-sidebar::-webkit-scrollbar,  #mobile-menu::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 4px;
+}
+
+.right-sidebar::-webkit-scrollbar-thumb,  #mobile-menu::-webkit-scrollbar-thumb {
+    background-color: var(--color-link);
+    border-radius: 4px;
+}
+
+.right-sidebar::-webkit-scrollbar-track,  #mobile-menu::-webkit-scrollbar-track {
+    background-color: var(--border-color);
+    border-radius: 4px;
+}
 
 /*------------------------------------- Estilos para el texto de contenido------------------------------------- */
 .content-text {
@@ -475,3 +492,4 @@ code {
     height: 28px;
     margin-right: 15px;
 }
+
